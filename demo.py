@@ -28,7 +28,7 @@ def get_confirm_token(response):
 
 
 if __name__ == "__main__":
-    st.set_page_config(page_title="Багато Лосося",
+    st.set_page_config(page_title="Ресторан",
                    page_icon="💸",
                    layout="wide")
     link = "https://drive.google.com/file/d/1e0ZT4bhQF2gCcjxwAJxEXADkMvdipgw-/view?usp=sharing"
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     kiev_one_hour_more_str = str(kiev_now_datetime+timedelta(hours=1))
     data = data.sort_values(by=['yhat'], ascending=False)
     # st.write(data[data["date"]])
-    st.title("Предсказание заказов - Багато Лосося")
+    st.title("Предсказание заказов - Ресторан")
     spot = st.selectbox("Точка", ['Січових Стрільців'])
     #data = data[data['spot'] == spot]
     st.write("Предсказания на сегодняшний день:", kiev_today_str)
